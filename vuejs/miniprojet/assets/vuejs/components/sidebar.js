@@ -23,7 +23,9 @@ let Sidebar = {
                     links : ["Liste des catégories de produits", "Ajouter une catégorie de produit"]
                 },
               
-            ]
+            ],
+            
+          showList : false  
           
         };
         
@@ -40,7 +42,7 @@ let Sidebar = {
     `  
     
         <Nav v-for="navs in navContent" :title="navs.title" :links="navs.links"/>
-         
+        
         
     `
 };

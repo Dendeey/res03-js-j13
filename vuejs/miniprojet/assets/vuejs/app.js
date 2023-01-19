@@ -1,4 +1,4 @@
-import { Sidebar } from "./components/aside.js";  
+import { Sidebar } from "./components/sidebar.js";  
   
 let App = {  
     
