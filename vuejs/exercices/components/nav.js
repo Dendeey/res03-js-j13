@@ -3,14 +3,14 @@ let Nav = {
     
     props : [
       
-      "titles"
+      "liTitle"
         
     ], 
     
     template: `  
         <nav>
             <ul>
-                <li v-for="title in titles" >{{ titles }}</li>
+                <li v-for="title in liTitle">{{ title }}</li>
             </ul>
         </nav>
     `

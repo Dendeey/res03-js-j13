@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="assets/styles/css/style.css" />
+        
+        <script src="https://kit.fontawesome.com/2a74f636e2.js" crossorigin="anonymous"></script>
+        <script async="" src="chrome-extension://kmhkepipobnjllejbafajoemahjejdcm/scripts/instana/eum.min.js" crossorigin="anonymous"></script>
+        
+        <title>Miniprojet</title>
+        <script type="module" src="assets/vuejs/index.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="hidden">Header</h1>
+            <section id="header-section" class="border-right">
+                <button id="side-menu-btn">
+                    <span class="bi-chevron-bar-left">
+                        
+                    </span>
+                </button>
+                <h2 class="hidden">Logo</h2>
+                <figure>
+                    <img src="https://res03.sites.3wa.io/assets/files/js/j5/demo/assets/logo.svg">
+                </figure>
+            </section>
+            <section>
+                
+            </section>
+        </header>
+        <main>
+            <aside id="app">
+                <!--<nav>
+                    <h2 class="main-btn">UTILISATEURS
+                        <span aria-hidden="true" class="bi bi-caret-down">
+                            
+                        </span>
+                    </h2>
+                    <ul class="submenu close">
+                        <li>LISTE DES UTILISATEURS</li>
+                        <li>AJOUTER UN UTILISATEUR</li>
+                        <li>STATISTIQUES UTILISATEURS</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h2 class="main-btn">PRODUITS
+                        <span aria-hidden="true" class="bi bi-caret-down">
+                            
+                        </span>
+                    </h2>
+                    <ul class="submenu close">
+                        <li>LISTE DES PRODUITS</li>
+                        <li>AJOUTER UN PRODUIT</li>
+                        <li>STATISTIQUES DES PRODUITS</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h2 class="main-btn">CATÉGORIES
+                        <span aria-hidden="true" class="bi bi-caret-down">
+                            
+                        </span>
+                    </h2>
+                    <ul class="submenu close">
+                        <li>LISTE DES CATÉGORIES DE PRODUITS</li>
+                        <li>AJOUTER UNE CATÉGORIE DE PRODUITS</li>
+                    </ul>
+                </nav>-->
+            </aside>
+            <section>
+                <h2>Liste des utilisateurs</h2>
+                <section>
+                    <h3 class="hidden">Ajouter un utilisateur</h3>
+                    <button class="add-btn" id="add-user-btn">
+                        <span class="bi-person-fill-add"></span> 
+                        Ajouter un utilisateur
+                    </button>
+                </section>
+                <section>
+                    <h3 class="hidden">Les données</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nom</th>
+                                <th>Age</th>
+                                <th>Actif</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>O</td>
+                                <td>Marsh Obrien</td>
+                                <td>24</td>
+                                <td>
+                                    <span class="bi-person-fill-down" aria-labelledby="Inactif"></span>
+                                </td>
+                                <td>
+                                    <a href=""><span class="bi-eye" aria-labelledby="Voir l'utilisateur"></span></a>
+                                    <a href=""><span class="bi-pen" aria-labelledby="Modifier l'utilisateur"></span></a>
+                                    <button class="delete-user" data-user="0"><span class="bi-trash3" aria-labelledby="Supprimer l'utilisateur"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Marsh Obrien</td>
+                                <td>24</td>
+                                <td>
+                                    <span class="bi-person-fill-down" aria-labelledby="Inactif"></span>
+                                </td>
+                                <td>
+                                    <a href=""><span class="bi-eye" aria-labelledby="Voir l'utilisateur"></span></a>
+                                    <a href=""><span class="bi-pen" aria-labelledby="Modifier l'utilisateur"></span></a>
+                                    <button class="delete-user" data-user="0"><span class="bi-trash3" aria-labelledby="Supprimer l'utilisateur"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>O</td>
+                                <td>Marsh Obrien</td>
+                                <td>24</td>
+                                <td>
+                                    <span class="bi-person-fill-down" aria-labelledby="Inactif"></span>
+                                </td>
+                                <td>
+                                    <a href=""><span class="bi-eye" aria-labelledby="Voir l'utilisateur"></span></a>
+                                    <a href=""><span class="bi-pen" aria-labelledby="Modifier l'utilisateur"></span></a>
+                                    <button class="delete-user" data-user="0"><span class="bi-trash3" aria-labelledby="Supprimer l'utilisateur"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Rios Gibson</td>
+                                <td>21</td>
+                                <td>
+                                    <span class="bi-person-fill-down" aria-labelledby="Inactif"></span>
+                                </td>
+                                <td>
+                                    <a href=""><span class="bi-eye" aria-labelledby="Voir l'utilisateur"></span></a>
+                                    <a href=""><span class="bi-pen" aria-labelledby="Modifier l'utilisateur"></span></a>
+                                    <button class="delete-user" data-user="0"><span class="bi-trash3" aria-labelledby="Supprimer l'utilisateur"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Morgan Buchanan</td>
+                                <td>29</td>
+                                <td>
+                                    <span class="bi-person-fill-down" aria-labelledby="Inactif"></span>
+                                </td>
+                                <td>
+                                    <a href=""><span class="bi-eye" aria-labelledby="Voir l'utilisateur"></span></a>
+                                    <a href=""><span class="bi-pen" aria-labelledby="Modifier l'utilisateur"></span></a>
+                                    <button class="delete-user" data-user="0"><span class="bi-trash3" aria-labelledby="Supprimer l'utilisateur"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Franklin Dyer</td>
+                                <td>25</td>
+                                <td>
+                                    <span class="bi-person-fill-down" aria-labelledby="Inactif"></span>
+                                </td>
+                                <td>
+                                    <a href=""><span class="bi-eye" aria-labelledby="Voir l'utilisateur"></span></a>
+                                    <a href=""><span class="bi-pen" aria-labelledby="Modifier l'utilisateur"></span></a>
+                                    <button class="delete-user" data-user="0"><span class="bi-trash3" aria-labelledby="Supprimer l'utilisateur"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Keller Pitts</td>
+                                <td>30</td>
+                                <td>
+                                    <span class="bi-person-fill-down" aria-labelledby="Inactif"></span>
+                                </td>
+                                <td>
+                                    <a href=""><span class="bi-eye" aria-labelledby="Voir l'utilisateur"></span></a>
+                                    <a href=""><span class="bi-pen" aria-labelledby="Modifier l'utilisateur"></span></a>
+                                    <button class="delete-user" data-user="0"><span class="bi-trash3" aria-labelledby="Supprimer l'utilisateur"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Davenport Maddo</td>
+                                <td>25</td>
+                                <td>
+                                    <span class="bi-person-fill-down" aria-labelledby="Inactif"></span>
+                                </td>
+                                <td>
+                                    <a href=""><span class="bi-eye" aria-labelledby="Voir l'utilisateur"></span></a>
+                                    <a href=""><span class="bi-pen" aria-labelledby="Modifier l'utilisateur"></span></a>
+                                    <button class="delete-user" data-user="0"><span class="bi-trash3" aria-labelledby="Supprimer l'utilisateur"></span></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

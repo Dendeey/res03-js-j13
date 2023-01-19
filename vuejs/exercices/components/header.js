@@ -8,15 +8,11 @@ let Header = {
             
             titles : [
             
-                {
-                    li : "Acceuil"
-                },
-                {
-                    li : "À propos"
-                },
-                {
-                    li : "Contact"
-                },
+        
+                "Acceuil",
+                "À propos",
+                "Contact"
+        
                 
             ]
             
@@ -33,7 +29,7 @@ let Header = {
     
     template: `  
         <header>
-            <Nav :titles = "title.li"/>
+        <Nav :liTitle="this.titles"/>
         </header>
         
     `
